@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imglady"
+            android:layout_width="124dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chirii" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            tools:text="Mercy Kemboi"
+            app:layout_constraintStart_toEndOf="@+id/imglady"
+            app:layout_constraintTop_toTopOf="@+id/imglady" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            tools:text="Mercy_@Chirii"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            tools:text="Programming is fun I love it, I have learnt Several languages like python, Kotlin, C++ which is IOT, Html/CSS and many others    .    #Enjoy "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imglady"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <ImageView
+            android:id="@+id/imgtweets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imglady"
+            app:srcCompat="@drawable/ic_baseline_message_24" />
+
+        <ImageView
+            android:id="@+id/imgretweets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tvTweetCounts"
+            app:layout_constraintTop_toTopOf="@+id/tvTweetCounts"
+            app:srcCompat="@drawable/ic_baseline_repeat_24" />
+
+        <TextView
+            android:id="@+id/tvTweetCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            tools:text="24"
+            app:layout_constraintBottom_toBottomOf="@+id/imgtweets"
+            app:layout_constraintStart_toEndOf="@+id/imgtweets"
+            app:layout_constraintTop_toTopOf="@+id/imgtweets" />
+
+        <TextView
+            android:id="@+id/tvreweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            tools:text="1100"
+            app:layout_constraintBottom_toBottomOf="@+id/imgretweets"
+            app:layout_constraintStart_toEndOf="@+id/imgretweets"
+            app:layout_constraintTop_toTopOf="@+id/imgretweets" />
+
+        <ImageView
+            android:id="@+id/imglike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvreweet"
+            app:layout_constraintStart_toEndOf="@+id/tvreweet"
+            app:layout_constraintTop_toTopOf="@+id/tvreweet"
+            app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            tools:text="1000"
+            app:layout_constraintBottom_toBottomOf="@+id/imglike"
+            app:layout_constraintStart_toEndOf="@+id/imglike"
+            app:layout_constraintTop_toTopOf="@+id/imglike" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLike"
+            app:layout_constraintStart_toEndOf="@+id/tvLike"
+            app:layout_constraintTop_toTopOf="@+id/tvLike"
+            app:srcCompat="@drawable/ic_baseline_ios_share_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
